@@ -1,0 +1,13 @@
+<app-card *ngFor="let user of users">
+    <ng-template appTemplate="header">
+        <a [routerLink]="['user', user.id]">{{ user.id }} - {{ user.name | circus }}</a>
+    </ng-template>
+    <ng-template appTemplate="body">
+        <div>
+            {{ user.gender }}
+        </div>
+        <div>
+            {{ user.birthdate }}
+        </div>
+    </ng-template>
+</app-card>

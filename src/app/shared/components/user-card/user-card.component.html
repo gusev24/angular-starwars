@@ -1,0 +1,28 @@
+<section *ngIf="user">
+  <header>
+    <h1><span>{{ user.id }} - </span>{{ user.name | circus }}</h1>
+  </header>
+  <section>
+    <div>
+      Birthdate: <span>{{ user.birthdate }}</span>
+    </div>
+    <div>
+      Gender: <span>{{ user.gender }}</span>
+    </div>
+    <div>
+      Height: <span>{{ user.height }}</span>
+    </div>
+    <div>
+      Mass: <span>{{ user.mass }}</span>
+    </div>
+    <div>
+      Eye color: <span>{{ user.eye_color }}</span>
+    </div>
+    <div>
+      Hair color: <span>{{ user.hair_color }}</span>
+    </div>
+    <div>
+      Skin color: <span>{{ user.skin_color }}</span>
+    </div>
+  </section>
+</section>
